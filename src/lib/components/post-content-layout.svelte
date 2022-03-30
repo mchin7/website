@@ -8,7 +8,6 @@
 
   export let baseUrl: string;
   export let imagesDirectoryName: string;
-  export let norobots: boolean = false;
   export let type: string = "";
 
   const { date, author, slug, title, image, teaserImage, excerpt } =
@@ -90,7 +89,6 @@
     type: "article",
     image: `images/${imagesDirectoryName}/${slug}/${image}`,
     imageTwitter: `images/${imagesDirectoryName}/${slug}/${image}`,
-    norobots: norobots,
   }}
 />
 <div class="flex justify-center mt-small mb-8">

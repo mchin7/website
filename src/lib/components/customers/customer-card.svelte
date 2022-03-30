@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Card from "$lib/components/ui-library/card";
   export let card: {
     image: string;
     details: {
@@ -28,9 +29,7 @@
   }
 </style>
 
-<div
-  class="rounded-2xl bg-off-white shadow-xl overflow-hidden max-w-xs sm:max-w-sm min-w-fit"
->
+<Card size="small" class=" overflow-hidden max-w-xs sm:max-w-sm min-w-fit">
   <div
     class="h-60 bg-cover bg-center "
     style="background-image: url({image})"
@@ -59,4 +58,4 @@
       </p>
     </div>
   </div>
-</div>
+</Card>

@@ -11,7 +11,7 @@ title: Installation requirements for Gitpod Self-Hosted
 
 > ⚠️ **Deprecated Content**
 >
-> The content of this page assumes you are using Helm, which is now deprecated.
+> The content of this page assumes you are using Helm, which is now deprecated. Please use the [Installer](../latest) instead.
 
 This page details the software and hardware requirements for installing Gitpod Self-Hosted on your own infrastructure.
 

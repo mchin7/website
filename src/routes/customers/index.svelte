@@ -78,7 +78,7 @@
   class="max-w-7xl lg:grid-cols-3 xl:px-4"
 />
 
-<UsedBy title="Trusted by +500k developers" />
+<UsedBy isCard={false} class="py-small" title="Trusted by +500k developers" />
 
 <Testimonials {testimonials} style="margin-top: var(--small);" />
 

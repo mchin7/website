@@ -3,6 +3,7 @@
   export { clazz as class };
   export let quote: string;
   export let author: { name: string; jobTitle: string };
+  import Card from "$lib/components/ui-library/card";
 
   const { name, jobTitle } = author;
 </script>
@@ -29,28 +30,31 @@
   }
 </style>
 
-<div
-  class="flex items-start relative text-left shadow-xl bg-white md:mx-auto rounded-5xl py-x-small px-micro sm:p-small max-w-4xl {clazz}"
->
-  <img
-    src="/images/startups/kumquat-left.png"
-    alt="Gitpod Kumquat"
-    class="kumquat-left"
-  />
-  <img src="/svg/quotation-mark.svg" alt="Left Quotation Mark" />
-  <div class="mt-x-small">
-    <p class="h3 text-black font-bold">
-      {@html quote}”
-    </p>
-    <p class="mt-x-small">
-      <span class="font-semibold text-black">{name},</span>
-      {jobTitle}
-    </p>
-  </div>
+<div>
+  <Card
+    size="medium"
+    class="flex items-start relative text-left md:mx-auto py-x-small px-micro sm:p-small max-w-4xl {clazz}"
+  >
+    <img
+      src="/images/startups/kumquat-left.png"
+      alt="Gitpod Kumquat"
+      class="kumquat-left"
+    />
+    <img src="/svg/quotation-mark.svg" alt="Left Quotation Mark" />
+    <div class="mt-x-small">
+      <p class="h3 text-black font-bold">
+        {@html quote}”
+      </p>
+      <p class="mt-x-small">
+        <span class="font-semibold text-black">{name},</span>
+        {jobTitle}
+      </p>
+    </div>
 
-  <img
-    src="/images/startups/kumquat-right.png"
-    alt="Gitpod Kumquat"
-    class="kumquat-right"
-  />
+    <img
+      src="/images/startups/kumquat-right.png"
+      alt="Gitpod Kumquat"
+      class="kumquat-right"
+    />
+  </Card>
 </div>

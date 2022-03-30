@@ -145,7 +145,7 @@
       {/if}
     </div>
     <div class="flex items-center">
-      {#if !$menuState}
+      {#if !$menuState && !isLoggedIn}
         <SignUpButtonTablet />
       {/if}
       <MobileMenuToggle />

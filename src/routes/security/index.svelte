@@ -37,7 +37,7 @@
 
 <UsedBy
   title="Trusted by developer led companies"
-  class="bg-off-white rounded-2xl shadow-normal pt-small pb-9"
+  class="py-small"
   style="margin-top: 0"
 />
 <Secure />

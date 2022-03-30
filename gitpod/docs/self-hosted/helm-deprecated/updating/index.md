@@ -11,7 +11,7 @@ title: Updating Gitpod Self-Hosted
 
 > ⚠️ **Deprecated Content**
 >
-> The content of this page assumes you are using Helm, which is now deprecated.
+> The content of this page assumes you are using Helm, which is now deprecated. Please use the [Installer](../latest) instead.
 
 ## Upgrading Gitpod from v0.9.0 to v0.10.0
 

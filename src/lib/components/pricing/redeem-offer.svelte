@@ -1,19 +1,18 @@
 <script lang="ts">
   import LinkButton from "$lib/components/ui-library/link-button";
+  import Card from "$lib/components/ui-library/card";
 </script>
 
 <style lang="postcss">
-  div {
-    max-width: 598px;
-  }
-
   li::marker {
     @apply text-orange-900;
   }
 </style>
 
-<div
-  class="bg-white shadow-normal rounded-5xl pt-medium pb-xx-small sm:py-small text-center w-11/12 sm:w-auto"
+<Card
+  background="white"
+  class="pt-medium pb-xx-small sm:py-small text-center w-11/12 sm:w-auto max-w-[600px]"
+  size="medium"
 >
   <h2 class="h4 max-w-sm mx-auto px-xx-small">
     Enable the Student Plan by following these steps:
@@ -40,4 +39,4 @@
   <LinkButton variant="primary" size="large" href="https://gitpod.io/plans"
     >Check Plans</LinkButton
   >
-</div>
+</Card>

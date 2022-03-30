@@ -28,7 +28,7 @@
 </script>
 
 <div
-  class="flex flex-col justify-between items-center max-w-sm bg-off-white shadow-normal text-center {clazz}"
+  class="flex flex-col justify-between h-full w-full items-center text-center {clazz}"
   style={styles}
 >
   <div>

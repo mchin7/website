@@ -74,7 +74,7 @@
         <li><FooterLink href="/blog">Blog</FooterLink></li>
         <li><FooterLink href="/docs">Documentation</FooterLink></li>
         <li><FooterLink href="/support">Support</FooterLink></li>
-        <!-- <li><FooterLink href="/guides">Guides</FooterLink></li> -->
+        <li><FooterLink href="/guides">Guides</FooterLink></li>
         <li>
           <FooterLink
             href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"

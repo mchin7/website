@@ -10,11 +10,14 @@
   import Input from "$lib/components/ui-library/input";
   import Select from "$lib/components/ui-library/select";
   import Button from "$lib/components/ui-library/button";
+  import Card from "$lib/components/ui-library/card";
 
   import { countryList } from "$lib/contents/license-key";
   import type { Email } from "../functions/submit-form";
   import Header from "$lib/components/header.svelte";
   import { noOfEngineers } from "$lib/contents/contact";
+  import { tick } from "svelte";
+  import { scrollToElement } from "../lib/utils/helpers";
 
   const formData: Form = {
     firstName: {
@@ -55,12 +58,15 @@
   };
 
   let isFormDirty: boolean = false;
+  let form: HTMLElement;
 
   $: isFormValid = Object.values(formData).every((field) => field.valid);
 
   const handleSubmit = async () => {
     isFormDirty = true;
     if (!isFormValid) {
+      await tick();
+      scrollToElement(form, ".error");
       return;
     }
 
@@ -123,10 +129,11 @@
   </div>
 </Header>
 
-<section
-  class="p-xx-small sm:py-small sm:px-x-small md:p-medium rounded-2xl bg-off-white shadow-xl mb-32 sm:mx-8"
+<Card
+  size="small"
+  class="p-xx-small sm:py-small sm:px-x-small md:p-medium mb-32 sm:mx-8"
 >
-  <form on:submit|preventDefault={handleSubmit} novalidate>
+  <form bind:this={form} on:submit|preventDefault={handleSubmit} novalidate>
     <h2 class="h4 title">Customer Information</h2>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-small">
@@ -265,4 +272,4 @@
       </p>
     </div>
   </div>
-</section>
+</Card>

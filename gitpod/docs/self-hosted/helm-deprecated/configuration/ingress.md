@@ -11,7 +11,7 @@ title: Configure the ingress to your Gitpod installation
 
 > ⚠️ **Deprecated Content**
 >
-> The content of this page assumes you are using Helm, which is now deprecated.
+> The content of this page assumes you are using Helm, which is now deprecated. Please use the [Installer](../../latest) instead.
 
 Configuring ingress into your Gitpod installation requires two things:
 

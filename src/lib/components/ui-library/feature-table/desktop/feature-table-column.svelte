@@ -3,13 +3,14 @@
   import LinkButton from "$lib/components/ui-library/link-button";
   import FeatureTableItem from "./feature-table-item.svelte";
   import type { FeatureTableColumn } from "../feature-table.types";
+  import Card from "$lib/components/ui-library/card";
 
   export let featureData: FeatureTableColumn;
 
   const shadow = featureData.isHighlighted ? "shadow-brand" : "shadow-normal";
 </script>
 
-<div class="p-4 bg-[#f9f9f9] {shadow} rounded-3xl">
+<Card size="small" class="{shadow} p-4">
   <FeatureTableHeader headerData={featureData.header} />
   <section
     class="grid grid-cols-1 auto-rows-[3.75rem] border-t-2 border-divider pt-4 inner-grid-desktop"
@@ -27,4 +28,4 @@
       </div>
     {/if}
   </section>
-</div>
+</Card>

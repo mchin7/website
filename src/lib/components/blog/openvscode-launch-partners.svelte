@@ -1,12 +1,9 @@
 <script>
   import { brands } from "$lib/contents/blog";
-
-  import Section from "../section.svelte";
+  import Card from "$lib/components/ui-library/card";
 </script>
 
-<Section
-  class="text-center bg-off-white pt-small shadow-normal rounded-2xl px-small"
->
+<Card size="small" class="text-center py-micro px-small mt-x-large">
   <div class="flex flex-wrap justify-around mt-small">
     {#each brands as { logo, alt }}
       <div class="flex justify-center mb-small w-32">
@@ -14,4 +11,4 @@
       </div>
     {/each}
   </div>
-</Section>
+</Card>

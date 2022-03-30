@@ -61,7 +61,7 @@ const handleSecurityLogs = async ({ event, resolve }) => {
 
 const handleGuides = async ({ event, resolve }) => {
   const guides = await Promise.all(
-    Object.entries(import.meta.glob("/src/routes/guides/*.md")).map(
+    Object.entries(import.meta.glob("/src/routes/guides/**/*.md")).map(
       async ([path, page]) => {
         const { metadata } = await page();
         const filename = path.split("/").pop();

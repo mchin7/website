@@ -1,13 +1,12 @@
 <script lang="ts">
+  import Card from "$lib/components/ui-library/card";
   import Base from "./base.svelte";
-  import type { Card } from "$lib/types/card.type";
-  export let card: Card;
+  let className: string = "";
+  export { className as class };
+  import type { Card as CardType } from "$lib/types/card.type";
+  export let card: CardType;
 </script>
 
-<Base
-  {card}
-  {...$$restProps}
-  class="p-x-small rounded-2xl {$$restProps.class}"
-  titleClassNames="h5"
-  styles="max-width: 315px"
-/>
+<Card size="small" styles="max-width: 315px" class="p-x-small {className}">
+  <Base {card} {...$$restProps} titleClassNames="h5" />
+</Card>

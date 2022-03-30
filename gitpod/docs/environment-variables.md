@@ -29,6 +29,15 @@ Environment variables beginning with the prefix `GITPOD_` are reserved for inter
 Gitpod supports encrypted, user-specific environment variables.
 They are stored as part of your user settings and can be used to set access tokens, or pass any other kind of user-specific information to your workspaces.
 
+The `DOCKERD_ARGS` environment variable can be used to specify additional arguments to the docker installation running in your workspace. Currently
+mapping a user in your container to the gitpod user in your workspace is supported. This helps if you are using an unprivileged user with your containers
+(e.g. user 1000 in a node image) but need to edit files with vscode that have been created within the container. The content of the environment variable
+should look like this:
+
+```json
+{ "remap-user": "1000" }
+```
+
 ## Project-Specific Environment Variables
 
 Environment variables which are defined in [project](/docs/teams-and-projects#projects) settings will be visible in prebuilds, and optionally also in workspaces. This is useful for prebuilds to access restricted services.

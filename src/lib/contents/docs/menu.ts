@@ -30,6 +30,7 @@ export const MENU: MenuEntry[] = [
     M("Workspace Location", "checkout-location"),
     M("Browser Settings", "configure/browser-settings"),
     M("Dotfiles", "config-dotfiles", [], "beta"),
+    M("Multi-Repo", "multi-repo-workspaces", [], "beta"),
   ]),
   M("Develop", "develop", [
     M("One workspace per task", "workspaces"),
@@ -65,6 +66,7 @@ export const MENU: MenuEntry[] = [
     M("GitLab", "gitlab-integration"),
     M("GitHub", "github-integration"),
     M("Bitbucket", "bitbucket-integration"),
+    M("GitHub Enterprise", "github-enterprise-integration"),
     M("Browser Bookmarklet", "browser-bookmarklet"),
     M("Browser Extension", "browser-extension"),
   ]),

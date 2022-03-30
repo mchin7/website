@@ -11,7 +11,7 @@ title: Gitpod Self-Hosted
 
 > ⚠️ **Deprecated Content**
 >
-> The content of this page assumes you are using Helm, which is now deprecated.
+> The content of this page assumes you are using Helm, which is now deprecated. Please use the [Installer](./latest) instead.
 
 Gitpod, just as you know it from [gitpod.io](https://gitpod.io), can be deployed and operated on your own infrastructure. It supports different cloud providers, self-managed Kubernetes clusters, corporate firewalls, and even off-grid / air-gapped networks.
 

@@ -11,7 +11,7 @@ title: Configure the storage used by your Gitpod installation
 
 > ⚠️ **Deprecated Content**
 >
-> The content of this page assumes you are using Helm, which is now deprecated.
+> The content of this page assumes you are using Helm, which is now deprecated. Please use the [Installer](../../latest) instead.
 
 Gitpod uses bucket storage to persist the contents of workspaces. Each workspace is tarballed into a single archive file which is then uploaded to a separate bucket.
 

@@ -56,7 +56,11 @@
   <div class=" entry flex flex-col md:flex-row">
     <div class="content-changelog">
       <BackLink />
-      <img src="/images/changelog/{image}" class="rounded-3xl" {alt} />
+      <img
+        src="/images/changelog/{image}"
+        class="rounded-xl sm:rounded-3xl"
+        {alt}
+      />
       <p class="mt-xx-small -mb-9">{formatDate(date)}</p>
       <h2>
         {title}

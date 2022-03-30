@@ -2,6 +2,7 @@
   import { trackEvent, trackIdentity } from "../segment.svelte";
   import Input from "$lib/components/ui-library/input";
   import Button from "$lib/components/ui-library/button";
+  import Card from "$lib/components/ui-library/card";
 
   let email = "";
   let resultMessage: string;
@@ -49,8 +50,9 @@
 </script>
 
 <div class={clazz}>
-  <div
-    class="bg-white shadow-normal rounded-2xl max-w-md p-x-small m-auto"
+  <Card
+    size="small"
+    class="max-w-md p-x-small m-auto"
     data-analytics={`{"dnt":true}`}
   >
     {#if resultMessage}
@@ -79,5 +81,5 @@
         </div>
       </form>
     {/if}
-  </div>
+  </Card>
 </div>

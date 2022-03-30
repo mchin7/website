@@ -11,6 +11,7 @@
   import { afterUpdate } from "svelte";
   import { trackEvent } from "./segment.svelte";
   import Share from "./share.svelte";
+  import Card from "$lib/components/ui-library/card";
 
   export let embedId: string;
   export let title: string;
@@ -86,51 +87,45 @@
   ];
 </script>
 
-<style>
-  .youtube {
-    position: relative;
-    overflow: hidden;
-    max-width: 100%;
+<style lang="postcss">
+  div :global(.youtube) {
+    @apply relative overflow-hidden max-w-full m-auto;
     max-height: 620px;
-    margin: auto;
   }
 
-  .youtube,
-  .youtube + :global(div) {
+  div :global(.youtube),
+  div {
     width: 990px;
-    max-width: 100%;
+    @apply max-w-full mx-auto;
   }
 
-  .youtube::after {
+  div :global(.youtube::after) {
     display: block;
     content: "";
     padding-top: 56.25%;
   }
 
   iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
+    @apply absolute top-0 left-0 w-full h-full max-w-full;
   }
 </style>
 
-<div class="youtube rounded-2xl shadow-light1">
-  <iframe
-    id={randomId}
-    src={`https://www.youtube.com/embed/${embedId}?enablejsapi=1`}
-    {title}
-    width="560"
-    height="315"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
+<div>
+  <Card size="small" class="youtube">
+    <iframe
+      id={randomId}
+      src={`https://www.youtube.com/embed/${embedId}?enablejsapi=1`}
+      {title}
+      width="560"
+      height="315"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    />
+  </Card>
+  <Share
+    text="Share this video"
+    {shareLinks}
+    class="share justify-end mx-auto mt-xx-small"
   />
 </div>
-<Share
-  text="Share this video"
-  {shareLinks}
-  class="share justify-end mx-auto mt-xx-small"
-/>

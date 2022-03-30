@@ -11,7 +11,7 @@ title: Configure the VSX registry used by your Gitpod Self-Hosted installation
 
 > ⚠️ **Deprecated Content**
 >
-> The content of this page assumes you are using Helm, which is now deprecated.
+> The content of this page assumes you are using Helm, which is now deprecated. Please use the [Installer](../../latest) instead.
 
 Gitpod uses the public [OpenVSX](https://open-vsx.org) registry as only products produced by Microsoft may access the Visual Studio Code Marketplace. This document explains how Gitpod Self-Hosted can be configured in air-gapped scenarios to connect to a private OpenVSX registry.
 

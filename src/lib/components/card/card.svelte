@@ -1,13 +1,13 @@
 <script lang="ts">
+  import Card from "$lib/components/ui-library/card";
   import Base from "./base.svelte";
-  import type { Card } from "$lib/types/card.type";
-  export let card: Card;
+  let className: string = "";
+  export { className as class };
+  import type { Card as CardType } from "$lib/types/card.type";
+  export let card: CardType;
   export let textAlign: "left" | "center" | "right" = "center";
 </script>
 
-<Base
-  {card}
-  {...$$restProps}
-  {textAlign}
-  class="py-small px-x-small rounded-5xl {$$restProps.class}"
-/>
+<Card size="medium" class="py-small max-w-sm px-x-small {className}">
+  <Base {textAlign} {...$$restProps} {card} />
+</Card>

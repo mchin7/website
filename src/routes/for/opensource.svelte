@@ -30,7 +30,6 @@
     description:
       "Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. Upgrade your account to our complimentary professional open source plan.",
     title: "Gitpod for Open Source",
-    norobots: true,
   }}
 />
 

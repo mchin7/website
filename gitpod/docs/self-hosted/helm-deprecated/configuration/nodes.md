@@ -11,7 +11,7 @@ title: Configure the Kubernetes nodes in your Gitpod Self-Hosted installation
 
 > ⚠️ **Deprecated Content**
 >
-> The content of this page assumes you are using Helm, which is now deprecated.
+> The content of this page assumes you are using Helm, which is now deprecated. Please use the [Installer](../../latest) instead.
 
 Configure the nodes (computers or virtual machines) that Kubernetes runs Gitpod's workspace pods on.
 
