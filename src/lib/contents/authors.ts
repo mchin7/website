@@ -269,6 +269,14 @@ export const authors: { [idx: string]: Author } = {
     },
     description: "",
   },
+  MrSimonEmms: {
+    name: "Simon Emms",
+    socialProfiles: {
+      github: "MrSimonEmms",
+      twitter: "TheShroppieBeek",
+    },
+    description: "",
+  },
 };
 
 export const authorSocialMediaLinks: SocialMediaLinks = Object.entries(

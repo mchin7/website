@@ -189,6 +189,9 @@ module.exports = {
               p: {
                 margin: "0",
               },
+              ul: {
+                marginLeft: "var(--x-small)",
+              },
             },
             ol: {
               listStylePosition: "inside",
