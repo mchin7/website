@@ -11,6 +11,14 @@ title: Troubleshooting
 
 If you cannot find your issue here or in the documentation, please contact Gitpod via our [Support page](/support).
 
+## Gitpod logs in VSCode Web
+
+These logs contain information about the workspace, the session, and the Visual Studio Code environment. They are useful for diagnosing connection issues and other unexpected behavior.
+
+- Open the Visual Studio Code Command Palette (`Shift + Command + P` (Mac) / `Ctrl + Shift + P` (Windows)) and type **Export logs**, select **Developer: Export all logs** from the list to download a zip file containing all the logs.
+
+**Important:** The content of these logs should NOT be shared publicly as it could containt sensitive information from your workspace, instead send it to support@gitpod.io along with a link to a corresponding Github issue if needed.
+
 ## Why doesn't the "ClearURLs" browser extension work with Gitpod?
 
 The ClearURLs browser extension for [Google Chrome](https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk?hl=en) and [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/clearurls/) inhibits Gitpod workspaces from initialising and the problem manifests with the following symptoms:
