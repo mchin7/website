@@ -63,7 +63,7 @@ FROM gitpod/workspace-base
 
 # Install custom tools, runtime, etc.
 # base image only got `apt` as the package manager
-# install-packages is a wrapper for `apt` that helps skip a few steps in the docker env.
+# install-packages is a wrapper for `apt` that helps skip a few commands in the docker env.
 RUN sudo install-packages shellcheck tree llvm
 ```
 
@@ -75,13 +75,13 @@ You can however use `sudo` in your Dockerfile. The following example shows a typ
 FROM gitpod/workspace-full
 
 # Install custom tools, runtime, etc.
-RUN sudo apt-get update \\
-    && sudo apt-get install -y \\
-        ... \\
-    && sudo rm -rf /var/lib/apt/lists/*
+# install-packages is a wrapper for `apt` that helps skip a few commands in the docker env.
+RUN sudo install-packages \\
+          binwalk \\
+          clang \\
+          tmux
 
-# Apply user-specific settings
-ENV ...
+# ... Do more stuff
 ```
 
 Once committed and pushed, Gitpod will automatically build this Dockerfile when (or [before](/docs/prebuilds)) new workspaces are created.
