@@ -81,7 +81,7 @@ RUN sudo install-packages \\
           clang \\
           tmux
 
-# ... Do more stuff
+# Apply user-specific settings
 ```
 
 Once committed and pushed, Gitpod will automatically build this Dockerfile when (or [before](/docs/prebuilds)) new workspaces are created.
