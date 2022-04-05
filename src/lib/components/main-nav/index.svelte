@@ -73,8 +73,7 @@
   }
 
   .scrolled-out {
-    @apply border-divider;
-    background: hsl(0 5% 96% / 85%);
+    @apply border-divider dark:border-transparent bg-[#f5f4f4d9] dark:bg-[#000000e8];
     backdrop-filter: saturate(0.5) blur(5px);
   }
 

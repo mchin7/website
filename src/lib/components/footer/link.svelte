@@ -28,6 +28,8 @@
   class:highlight
   class="
     text-dark-grey
+    dark:text-dark-off-white
+    dark:
     no-underline
     focus:text-black
     hover:text-black

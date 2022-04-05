@@ -184,6 +184,14 @@
       alt="Gitpod in a Nutshell"
       width="700"
       height="724"
+      class="block dark:hidden"
+    />
+    <img
+      src="/images/illustrattion-large-dark.png"
+      alt="Gitpod in a Nutshell"
+      width="700"
+      height="724"
+      class="hidden dark:block transform scale-[1.2]"
     />
   </div>
 </div>

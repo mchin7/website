@@ -17,7 +17,7 @@
 </script>
 
 <div
-  class="border-b border-gray-300 border-solid"
+  class="border-b border-gray-300 dark:border-transparent border-solid"
   data-analytics={`{"position":"announcement"}`}
 >
   <Banner

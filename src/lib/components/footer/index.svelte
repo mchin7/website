@@ -21,7 +21,7 @@
   ];
 </script>
 
-<div class="pb-8 bg-gray-100 text-p-footer" data-id="footer">
+<div class="pb-8 bg-gray-100 dark:bg-gray-800 text-p-footer" data-id="footer">
   <footer
     class="py-large m-auto px-xx-small md:max-w-4xl md:py-small md:px-xx-small"
   >

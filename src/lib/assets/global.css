@@ -24,7 +24,17 @@
     font-family: var(--font);
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    @apply m-0 min-h-screen text-dark-grey bg-sand-light text-p-medium;
+    @apply m-0 min-h-screen text-dark-grey dark:text-dark-off-white bg-sand-light dark:bg-dark-bg text-p-medium;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 600; /* this is default. it's removed in TW. Should we just remove it from the TW reset? */
+    @apply text-black dark:text-dark-white;
   }
 
   /* Make images easier to work with */

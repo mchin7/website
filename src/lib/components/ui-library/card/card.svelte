@@ -18,11 +18,11 @@
   }
 
   .white {
-    @apply bg-white;
+    @apply bg-white dark:bg-dark-light-grey;
   }
 
   .off-white {
-    @apply bg-off-white;
+    @apply bg-off-white dark:bg-dark-light-grey;
   }
 
   .brand {

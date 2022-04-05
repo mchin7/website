@@ -44,6 +44,11 @@ module.exports = {
         error: "var(--error)",
         "salmon-hover": "var(--salmon-hover)",
 
+        "dark-bg": "var(--dark-bg)",
+        "dark-white": "var(--dark-white)",
+        "dark-off-white": "var(--dark-off-white)",
+        "dark-light-grey": "var(--dark-light-grey)",
+
         gray: {
           900: "var(--black)",
           800: "var(--dark-grey)",
