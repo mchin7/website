@@ -62,7 +62,9 @@ If you want a base image without the default tooling installed then use the <a h
 FROM gitpod/workspace-base
 
 # Install custom tools, runtime, etc.
-RUN brew install fzf
+# base image only got `apt` as the package manager
+# install-packages is a wrapper for `apt` that helps skip a few steps in the docker env.
+RUN sudo install-packages shellcheck tree llvm
 ```
 
 When you launch a Gitpod workspace, the local console will use the `gitpod` user, so all local settings, config file, etc. should apply to `/home/gitpod` or be run using `USER gitpod` (we no longer recommend using `USER root`).
