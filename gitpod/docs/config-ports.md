@@ -9,7 +9,7 @@ title: Configure Ports
 
 # Configure Ports
 
-When your project starts a service that listens on a given port, Gitpod automatically serves traffic to this port to your on an authenticated URL.
+When your project starts a service that listens on a given port, Gitpod automatically serves traffic to this port to your application on an authenticated URL.
 
 If you want to configure ports, such as their visibility, what Gitpod does when it detects a new port being available, etc, you do that in the `ports` section of the [`.gitpod.yml`](/docs/references/gitpod-yml) configuration file.
 
